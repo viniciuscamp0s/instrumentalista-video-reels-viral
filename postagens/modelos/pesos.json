@@ -1,0 +1,13 @@
+{
+  "_leia": "Regua da nota de 0 a 100 de cada post. Sem IA. Pesos somam 1 em cada modo.",
+  "janela_tipico_dias": 14,
+  "maduro_apos_dias": 2,
+  "limiar_seguidores_modo_intencional": 10000,
+  "modos": {
+    "formar_audiencia": { "volume": 0.45, "envio_salvo": 0.2, "retencao": 0.2, "comentario": 0.15 },
+    "intencional":      { "volume": 0.2,  "envio_salvo": 0.25, "retencao": 0.3, "comentario": 0.25 }
+  },
+  "lote": { "repetir_vencedor": 0.7, "testar_novo": 0.3 },
+  "formato_morre_apos_tentativas": 6,
+  "trecho_volta_apos_dias": 7
+}

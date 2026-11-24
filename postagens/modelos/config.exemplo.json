@@ -1,0 +1,13 @@
+{
+  "_leia": "Copie para minha-automacao/config.json. Tudo nasce desligado e em ensaio.",
+  "ensaio": true,
+  "publicar_automatico": false,
+  "publicar_sem_resposta": false,
+  "aprovacao": { "canal": "chat-da-ia", "prazo_horas": 12 },
+  "posts_por_dia": 1,
+  "canais": ["reels"],
+  "teto_gasto_mensal_reais": 0,
+  "arquivo_de_parada": "parar",
+  "pasta_materia_prima": "",
+  "palavra_chave_cta": ""
+}

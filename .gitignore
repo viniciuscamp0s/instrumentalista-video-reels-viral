@@ -1,0 +1,9 @@
+publicar.local.json
+node_modules/
+.env
+*.tmp
+.claude/
+_preview/
+*.mp4
+!templates/**/exemplo-leve.mp4
+baixados/

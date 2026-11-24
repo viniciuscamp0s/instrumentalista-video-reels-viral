@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion</title>
+<style>
+  :root { --fundo: #040a17; --texto: #e8edf6; --destaque: #f0b505; --linha: rgba(255,255,255,.14); }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: var(--fundo); color: var(--texto);
+         font: 500 14px/1.4 system-ui, sans-serif; display: flex; flex-direction: column;
+         align-items: center; justify-content: center; gap: 14px; padding: 16px; }
+  canvas { height: min(84vh, 1920px); max-width: 100%; border-radius: 14px;
+           box-shadow: 0 20px 80px rgba(0,0,0,.6); background: #050d1f; }
+  .controles { display: flex; align-items: center; gap: 10px; width: min(560px, 100%); }
+  button { font: 600 14px system-ui, sans-serif; color: #12294e; background: var(--destaque); border: 0;
+           border-radius: 8px; padding: 9px 14px; cursor: pointer; white-space: nowrap; }
+  button.sec { background: transparent; color: var(--texto); border: 1px solid var(--linha); }
+  button:disabled { opacity: .45; cursor: default; }
+  input[type=range] { flex: 1; accent-color: var(--destaque); }
+  .tempo { font-variant-numeric: tabular-nums; min-width: 92px; text-align: right; opacity: .8; }
+  .aviso { opacity: .65; font-size: 12px; min-height: 17px; text-align: center; }
+  body.render .controles, body.render .aviso { display: none; }
+  body.render canvas { height: auto; border-radius: 0; box-shadow: none; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div class="controles">
+  <button id="play" disabled>▶ Assistir</button>
+  <input id="barra" type="range" min="0" max="1" step="0.0333" value="0">
+  <span class="tempo" id="tempo"></span>
+  <button id="baixar" class="sec" disabled>Baixar MP4</button>
+</div>
+<div class="aviso" id="aviso">Carregando fontes, imagens e gravação…</div>
+<!-- ordem: o roteiro (dados do projeto), o som, o motor e as cenas do projeto -->
+<script src="roteiro.js"></script>
+<script src="trilha.js"></script>
+<script src="nucleo.js"></script>
+<script src="cenas.js"></script>
+</body>
+</html>

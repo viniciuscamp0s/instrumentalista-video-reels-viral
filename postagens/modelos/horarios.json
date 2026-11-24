@@ -1,0 +1,14 @@
+{
+  "_leia": "Casa unica dos horarios. Campo invalido cai no padrao. Horas no fuso local da pessoa.",
+  "fuso": "America/Sao_Paulo",
+  "janela": { "inicio": "08:00", "fim": "22:00" },
+  "silencio": { "inicio": "00:00", "fim": "06:00" },
+  "espacamento_min_minutos": 20,
+  "dias_sem_post": [],
+  "faixas": [
+    { "inicio": "08:00", "fim": "12:00", "peso": null },
+    { "inicio": "12:00", "fim": "18:00", "peso": null },
+    { "inicio": "18:00", "fim": "22:00", "peso": null }
+  ],
+  "fixos": []
+}
