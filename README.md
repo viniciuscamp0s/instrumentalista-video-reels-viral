@@ -1,4 +1,4 @@
-# inteligencia-video
+# instrumentalista-video-reels-viral
 
 **A inteligência de edição de vídeo com IA, pronta para instalar no Claude Code, no Codex ou em qualquer estrutura.**
 
@@ -64,7 +64,7 @@ medição e publicação são código: custam zero de assinatura.
 ## Experimente em 1 minuto
 
 ```bash
-git clone https://github.com/viniciuscamp0s/inteligencia-video.git && cd inteligencia-video
+git clone https://github.com/viniciuscamp0s/instrumentalista-video-reels-viral.git && cd instrumentalista-video-reels-viral
 npm test                                               # testes, sem dependências
 node templates/motion-exemplo/render.mjs --quadros 1,5,11   # 3 quadros do template em _preview/
 node templates/motion-exemplo/render.mjs               # o MP4 completo do exemplo
